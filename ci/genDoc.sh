@@ -13,9 +13,19 @@ git checkout master doc
 cd ./doc
 make html
 
-# setup deploy gh-pages
-rm -rf ./docs
+# move builded file 
+cd ../
+mv ./doc/build/html/* ./
+
+# deploy
+rm -rf ./doc
 touch .nojekyll
+git add -A
+git commit -m 'updating doc'
+git push origin gh-pages
+
+# back to master branch
+git checkout master
 
 
 
