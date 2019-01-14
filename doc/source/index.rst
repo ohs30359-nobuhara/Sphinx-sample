@@ -10,6 +10,8 @@ Welcome to SphinxSample's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   /sample/index
+
 
 
 Indices and tables
